@@ -7,7 +7,7 @@ const execute = async function (job, callback) {
 		message: "Job is not valid or not found, or is already resolved:"
 	});
 
-	console.log(`Jobs.execute`, jobDoc.name, jobDoc._id, jobDoc.due)
+	//console.log(`Jobs.execute`, jobDoc.name, jobDoc._id, jobDoc.due)
 
 	if (typeof jobDoc === "object") {
 		if (typeof Utilities.registry.data[jobDoc.name]) {			
